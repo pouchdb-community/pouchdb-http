@@ -2,19 +2,25 @@
   "name": "pouchdb-http",
   "version": "5.4.6",
   "description": "PouchDB as an HTTP-only package.",
-  "main": "index.js",
   "author": "Dale Harvey <dale@arandomurl.com>",
   "license": "Apache-2.0",
+  "main": "index.js",
+  "jsnext:main": "src.js",
+  "browser": {
+    "index.js": "browser.js"
+  },
+  "scripts": {
+    "prepublish": "rollup-prepublish > index.js && rollup-prepublish --browser > browser.js"
+  },
   "files": [
-    "index.js"
+    "*.js"
   ],
   "dependencies": {
     "pouchdb-adapter-http": "^5.4.5",
     "pouchdb-core": "^5.4.5"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "rollup-prepublish": "^1.2.1"
   },
   "keywords": [],
   "repository": {
