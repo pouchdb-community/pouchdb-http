@@ -10,16 +10,25 @@
     "index.js": "browser.js"
   },
   "scripts": {
-    "prepublish": "rollup-prepublish > index.js && rollup-prepublish --browser > browser.js"
+    "prepublish": "rollup-prepublish --fix-dependencies src.js > index.js && rollup-prepublish --fix-dependencies --browser src.js > browser.js"
   },
   "files": [
     "*.js"
   ],
   "dependencies": {
-    "pouchdb-adapter-http": "^5.4.5",
-    "pouchdb-core": "^5.4.5"
+    "argsarray": "0.0.1",
+    "debug": "2.2.0",
+    "es6-promise-pool": "2.4.2",
+    "inherits": "2.0.1",
+    "js-extend": "1.0.1",
+    "lie": "3.0.4",
+    "pouchdb-collections": "1.0.1",
+    "request": "2.72.0",
+    "scope-eval": "0.0.3"
   },
   "devDependencies": {
+    "pouchdb-adapter-http": "^5.4.5",
+    "pouchdb-core": "^5.4.5",
     "rollup-prepublish": "^1.2.1"
   },
   "keywords": [],
