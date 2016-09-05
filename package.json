@@ -1,6 +1,6 @@
 {
   "name": "pouchdb-http",
-  "version": "6.0.0",
+  "version": "6.0.2",
   "description": "PouchDB as an HTTP-only package.",
   "main": "index.js",
   "author": "Dale Harvey <dale@arandomurl.com>",
