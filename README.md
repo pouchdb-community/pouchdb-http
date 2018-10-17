@@ -25,6 +25,9 @@ Note that this preset doesn't come with map/reduce (i.e. the `query()` API). If 
 var PouchDB = require('pouchdb-http')
   .plugin(require('pouchdb-mapreduce'));
 ```
-
+Also note that pouchdb-mapreduce has had a major version bump, so you need to use the version 6 release to match pouchdb-http.
+```bash
+npm install pouchdb-mapreduce@^6
+```
 
 For full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).
